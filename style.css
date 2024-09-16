@@ -1,0 +1,237 @@
+*{
+  padding: 0rem;
+  margin: 0rem;
+}
+
+body{
+  background-color: #B2DFDB;
+}
+
+/* header{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+  padding: 1rem 2rem;
+}
+
+.deleteAll{
+  padding: 0.9rem 0.6rem;
+  border-radius: 12px;
+  border: none;
+  background-color: #F44336;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+} */
+
+/* .allNotes{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin: 1rem;
+  gap: 1rem;
+} */
+/* .note{
+  border: 1px solid #00695C;
+  padding: 0.8rem;
+  border-radius: 12px;
+} */
+
+/* .note button{
+  width: 6rem;
+  padding: 0.6rem;
+  font-weight: bold;
+  background-color: #26A69A;
+  border: none;
+  border-radius: 5px;
+  margin: 1rem 0.3rem 0.1rem;
+} */
+
+/* section{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+} */
+
+/* .newNote{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin: 1rem 0rem;
+  background-color: white;
+  padding: 1rem;
+  width: 22rem;
+} */
+
+/* #newTitle{
+  width: 20rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+} */
+
+/* #textArea{
+  width: 20rem;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  line-height: 1.1rem;
+} */
+
+/* #createNote{
+  margin: 1rem 0rem 0rem;
+  padding: 0.6rem;
+  background-color: #26A69A;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+} */
+
+
+@media(min-width:350px){
+  header{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem;
+    height: 8vh;
+  }
+  h1{
+    font-size: 1.7rem;
+  }
+  .deleteAll{
+    padding: 0.6rem;
+    border-radius: 12px;
+    border: none;
+    background-color: #F44336;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+  }
+
+  .allNotes{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+  .note{
+    word-break: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    hyphens: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #00695C;
+    padding: 0.4rem;
+    border-radius: 5px;
+  }
+
+  .note button{
+    width: 4rem;
+    padding: 0.3rem 0.1rem;
+    font-weight: bold;
+    background-color: #26A69A;
+    border: none;
+    border-radius: 5px;
+    margin: 1rem 0.3rem 0.1rem;
+  }
+
+  section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0.5rem;
+  }
+
+  .newNote{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin: 1rem 0rem 0.5rem;
+    background-color: white;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  #newTitle{
+    width: 90%;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+  }
+
+  #textArea{
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    line-height: 1.1rem;
+    font-size: 1rem;
+  }
+  #createNote{
+    margin: 1rem 0rem 0rem;
+    padding: 0.6rem;
+    background-color: #26A69A;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+}
+
+@media(min-width:700px){
+  header{
+    height: 9vh;
+    padding: 1rem;
+  }
+  h1{
+    font-size: 2rem;
+  }
+  .deleteAll{
+    padding: 0.8rem;
+  }
+
+  .allNotes{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .note{
+    padding: 0.6rem;
+  }
+
+  .note button{
+    width: 5rem;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .newNote{
+    width: 60%;
+  }
+}
+
+@media(min-width:1100px){
+  h1{
+    font-size: 2.1rem;
+  }
+  .allNotes{
+    grid-template-columns: repeat(4,1fr);
+  }
+  .note button{
+    padding: 0.7rem;
+  }
+  .newNote{
+    width: 50%;
+  }
+}
